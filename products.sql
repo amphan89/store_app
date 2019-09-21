@@ -4,17 +4,18 @@ CREATE DATABASE pokemart_db;
 USE pokemart_db;
 
 CREATE TABLE products (
-    id INT NOT NULL AUTO_INCREMENT,
-    Item VARCHAR (255),
-    Category VARCHAR (255),
-    Price VARCHAR (255),
-    Stock VARCHAR (255),
-    Description VARCHAR (255),
-    PRIMARY KEY(id)
+    item_id INT AUTO_INCREMENT NOT NULL,
+    product_name VARCHAR (45) NOT NULL,
+    department_name VARCHAR (45) NOT NULL,
+    price DECIMAL (10,2) NOT NULL,
+    stock_quanity INT (10) NOT NULL,
+    product_description VARCHAR (45),
+    primary key(item_id)
 );
 
+SELECT  * FROM products;
 
-INSERT INTO products (Item, Category, Price, Stock, Description)
+INSERT INTO products (product_name, department_name, price, stock_quanity, product_description)
 VALUES 
 ('Pokeball', "Poke Balls", 200, 10, '1x catch rate pokeball'), 
 ('Great Ball', "Poke Balls", 600, 5, '1.5x catch rate pokeball'), 
