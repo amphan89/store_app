@@ -7,7 +7,7 @@ var choices = ['View Products for sale', 'Buy Item', 'Nothing'];
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '0akland510!',
+  password: '***',
   database: 'pokemart_db',
   port: 3306
 });
